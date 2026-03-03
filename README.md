@@ -1,1 +1,0 @@
-# guardiao-de-chamadas-privacy
