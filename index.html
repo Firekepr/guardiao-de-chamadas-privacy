@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Guardião de Chamadas</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0D0D0D;
+      color: #E0E0E0;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #141414;
+      border-bottom: 1px solid #2A2A2A;
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .shield {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      background: rgba(0, 229, 160, 0.1);
+      border-radius: 50%;
+      margin-bottom: 16px;
+    }
+
+    .shield svg { width: 32px; height: 32px; }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .card {
+      background: #141414;
+      border: 1px solid #2A2A2A;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #00E5A0;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: #00E5A0;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .card p {
+      color: #AAAAAA;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      color: #AAAAAA;
+      font-size: 14px;
+      padding: 8px 0;
+      border-bottom: 1px solid #1E1E1E;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .card ul li:last-child { border-bottom: none; }
+
+    .card ul li::before {
+      content: '→';
+      color: #00E5A0;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .permission-item {
+      background: #1A1A1A;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+    }
+
+    .permission-item:last-child { margin-bottom: 0; }
+
+    .permission-name {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      color: #00E5A0;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .permission-desc {
+      font-size: 13px;
+      color: #888;
+      margin: 0;
+    }
+
+    .highlight {
+      background: rgba(0, 229, 160, 0.06);
+      border: 1px solid rgba(0, 229, 160, 0.2);
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 16px;
+    }
+
+    .highlight p {
+      color: #00E5A0 !important;
+      font-size: 13px !important;
+      margin: 0 !important;
+    }
+
+    .contact-box {
+      text-align: center;
+      padding: 24px;
+    }
+
+    .contact-box p { margin-bottom: 8px; }
+
+    .contact-box a {
+      color: #00E5A0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid #1A1A1A;
+      color: #444;
+      font-size: 13px;
+    }
+
+    .updated {
+      display: inline-block;
+      background: #1A1A1A;
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="shield">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L4 6V12C4 16.4 7.4 20.5 12 22C16.6 20.5 20 16.4 20 12V6L12 2Z"
+              fill="#00E5A0" opacity="0.9"/>
+        <path d="M9 12L11 14L15 10" stroke="#0D0D0D" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>Política de Privacidade</h1>
+    <p>Guardião de Chamadas</p>
+  </header>
+
+  <div class="container">
+
+    <div style="text-align:center; margin-bottom: 36px;">
+      <span class="updated">Última atualização: Janeiro de 2025</span>
+    </div>
+
+    <!-- Introdução -->
+    <div class="card">
+      <h2>Introdução</h2>
+      <p>
+        O <strong style="color:#fff">Guardião de Chamadas</strong> é um aplicativo de gerenciamento
+        e bloqueio de chamadas telefônicas desenvolvido para proteger os usuários de chamadas
+        indesejadas, spam e telemarketing.
+      </p>
+      <p>
+        Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações
+        relacionadas ao uso do aplicativo. Ao utilizar o Guardião de Chamadas, você concorda com
+        os termos descritos nesta política.
+      </p>
+    </div>
+
+    <!-- Dados coletados -->
+    <div class="card">
+      <h2>Dados Coletados</h2>
+      <p>
+        O Guardião de Chamadas opera <strong style="color:#fff">inteiramente no seu dispositivo</strong>.
+        Não coletamos, transmitimos nem armazenamos nenhum dado em servidores externos. Todas as
+        informações permanecem exclusivamente no seu aparelho.
+      </p>
+      <p>Os seguintes dados são acessados localmente para o funcionamento do app:</p>
+      <ul>
+        <li>Números de telefone das chamadas recebidas — para identificar e bloquear chamadas indesejadas</li>
+        <li>Histórico de chamadas — para exibir o registro de chamadas no aplicativo</li>
+        <li>Lista de contatos — para identificar chamadas de números salvos e evitar bloqueios indevidos</li>
+        <li>Lista de números bloqueados manualmente — salva localmente no dispositivo</li>
+        <li>Configurações de bloqueio — salvas localmente via SharedPreferences</li>
+      </ul>
+      <div class="highlight">
+        <p>🔒 Nenhum dado pessoal é enviado a servidores externos, terceiros ou ao desenvolvedor.</p>
+      </div>
+    </div>
+
+    <!-- Permissões -->
+    <div class="card">
+      <h2>Permissões Utilizadas</h2>
+      <p>O aplicativo solicita as seguintes permissões do Android, todas necessárias para o funcionamento das funcionalidades:</p>
+
+      <div style="margin-top: 16px;">
+        <div class="permission-item">
+          <div class="permission-name">READ_PHONE_STATE</div>
+          <p class="permission-desc">Detecta chamadas recebidas para exibir o widget flutuante e acionar o serviço de triagem.</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">READ_CONTACTS</div>
+          <p class="permission-desc">Verifica se o número chamador está salvo nos contatos para evitar bloqueios de pessoas conhecidas.</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">READ_CALL_LOG</div>
+          <p class="permission-desc">Acessa o histórico de chamadas para exibir as ligações recentes no aplicativo.</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">WRITE_CALL_LOG</div>
+          <p class="permission-desc">Necessário em alguns dispositivos para registrar chamadas bloqueadas no histórico.</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">CALL_PHONE</div>
+          <p class="permission-desc">Permite realizar chamadas diretamente pelo aplicativo ao tocar em um número.</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">ANSWER_PHONE_CALLS</div>
+          <p class="permission-desc">Utilizado pelo serviço de triagem para rejeitar chamadas bloqueadas automaticamente.</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">POST_NOTIFICATIONS</div>
+          <p class="permission-desc">Exibe notificações discretas quando uma chamada é bloqueada (configurável pelo usuário).</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">SYSTEM_ALERT_WINDOW</div>
+          <p class="permission-desc">Permite exibir o widget flutuante sobre outras aplicações durante uma chamada recebida.</p>
+        </div>
+        <div class="permission-item">
+          <div class="permission-name">RECEIVE_BOOT_COMPLETED</div>
+          <p class="permission-desc">Reinicia o serviço de bloqueio automaticamente após o dispositivo ser reiniciado.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Anúncios -->
+    <div class="card">
+      <h2>Anúncios e AdMob</h2>
+      <p>
+        O aplicativo exibe anúncios fornecidos pelo <strong style="color:#fff">Google AdMob</strong>
+        na versão gratuita. O Google AdMob pode coletar dados do dispositivo para personalização
+        de anúncios de acordo com sua própria
+        <a href="https://policies.google.com/privacy" target="_blank"
+           style="color:#00E5A0;">Política de Privacidade</a>.
+      </p>
+      <p>
+        Os anúncios podem ser removidos permanentemente através de uma compra única disponível
+        dentro do aplicativo. Após a remoção, nenhum SDK de publicidade é ativado.
+      </p>
+    </div>
+
+    <!-- Compras -->
+    <div class="card">
+      <h2>Compras no Aplicativo</h2>
+      <p>
+        O aplicativo oferece a opção de compra única para remoção de anúncios, processada
+        exclusivamente pelo <strong style="color:#fff">Google Play Billing</strong>.
+        Nenhum dado de pagamento é coletado ou armazenado pelo desenvolvedor.
+      </p>
+    </div>
+
+    <!-- Crianças -->
+    <div class="card">
+      <h2>Crianças e Menores de Idade</h2>
+      <p>
+        O Guardião de Chamadas não é direcionado a crianças menores de 13 anos e não coleta
+        intencionalmente informações de menores. O aplicativo destina-se exclusivamente a usuários
+        adultos que gerenciam suas próprias comunicações telefônicas.
+      </p>
+    </div>
+
+    <!-- Alterações -->
+    <div class="card">
+      <h2>Alterações nesta Política</h2>
+      <p>
+        Esta política pode ser atualizada periodicamente. Alterações significativas serão
+        comunicadas através de atualização do aplicativo na Play Store. O uso continuado do
+        aplicativo após qualquer alteração constitui aceitação da política atualizada.
+      </p>
+    </div>
+
+    <!-- Contato -->
+    <div class="card">
+      <h2>Contato</h2>
+      <div class="contact-box">
+        <p>Dúvidas sobre esta política de privacidade?</p>
+        <p>Entre em contato através do e-mail:</p>
+        <br/>
+        <a href="mailto:firekeeprone.dev@gmail.com">firekeeprone.dev@gmail.com</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Guardião de Chamadas. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
